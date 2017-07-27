@@ -20,7 +20,7 @@ public partial class Admin_createAdmin : System.Web.UI.Page
     protected void submitAdmit_Click(object sender, EventArgs e)
     {
  
-        SqlConnection vid = new SqlConnection("Data Source=IN-CSCI-ASPNET;Initial Catalog=shkitche;Persist Security Info=True;User ID=shkitche;Password=s8414kit");
+        SqlConnection vid = new SqlConnection("Data Source= Catalog= ;Persist Security Info=True;User ID= ;Password= ");
         {
             SqlCommand admin = new SqlCommand("Insert into Admin(AdminUserName, AdminPassword, AdminApproved) Values(@AdminUserName, @AdminPassword, @AdminApproved)", vid);
 
