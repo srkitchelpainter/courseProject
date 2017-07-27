@@ -19,7 +19,7 @@ public partial class changepassword : System.Web.UI.Page
 
     protected void ChangePassword_Click(object sender, EventArgs e)
     {
-        SqlConnection vid = new SqlConnection("Data Source=IN-CSCI-ASPNET;Initial Catalog=shkitche;Persist Security Info=True;User ID=shkitche;Password=s8414kit");
+        SqlConnection vid = new SqlConnection("Data Source= Catalog= ;Persist Security Info=True;User ID= ;Password= ");
         SqlDataAdapter sda = new SqlDataAdapter("select Password from Customers where Password = '" + OldPassword.Text + "'", vid);
         DataTable dt = new DataTable();
         sda.Fill(dt);
