@@ -22,7 +22,7 @@ public partial class Admin_Default : System.Web.UI.Page
     }
     protected void addService_Click(object sender, EventArgs e)
     {
-        SqlConnection vid = new SqlConnection("Data Source=IN-CSCI-ASPNET;Initial Catalog=shkitche;Persist Security Info=True;User ID=shkitche;Password=s8414kit");
+        SqlConnection vid = new SqlConnection("Data Source= Catalog= ;Persist Security Info=True;User ID= ;Password= ");
         {
             SqlCommand ser = new SqlCommand("Insert into unlistedServices(ServiceName, Price) Values(@ServiceName, @Price)", vid);
 
